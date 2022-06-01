@@ -1,6 +1,8 @@
 <?php
+
+
 $to = "lalitkumar971088@gmail.com";
-$subject = "My subject";
+$subject = "";
 $txt = "Hello world!";
 $headers = "From: webmaster@example.com" . "\r\n" .
 "CC: somebodyelse@example.com";
