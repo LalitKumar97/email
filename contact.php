@@ -8,7 +8,7 @@ if($_POST["submit"]) {
     $message=$_POST["message"];
 
     $mailBody="Name: $sender\nEmail: $senderEmail\n\n$message";
-
+    $headers = 'From:' .$senderEmail ."\r\n";
     mail($recipient, $subject, $mailBody, "From: $sender <$senderEmail>");
 
     $thankYou="<p>Thank you! Your message has been sent.</p>";
